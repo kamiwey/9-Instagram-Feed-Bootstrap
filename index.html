@@ -1,0 +1,319 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+        <title>Hello, world!</title>
+      </head>
+
+<body>
+    
+    <nav class="navbar fixed-top navbar-light bg-light">
+        <div class="container-fluid">
+          
+          <span class="navbar-brand mb-0 ml-5 h1">
+            <i class="fab fa-instagram"></i> 
+            Instagram
+          </span>  
+
+          <div class="row">
+
+           <!-- modal button -->
+
+          <button data-toggle="modal" data-target="#exampleModal" class="btn btn-success" 
+          type="button">Create a new post</button>
+
+          <!-- Dropdown button -->
+
+            <div class="btn-group">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa-solid fa-gear"></i>
+                  </button>
+                <div class="dropdown-menu">
+
+                   <a class="dropdown-item" href="#"></a>
+                   <a class="dropdown-item" href="#">Profile</a>
+                   <a class="dropdown-item" href="#">Accesibility</a>
+                   <a class="dropdown-item" href="#">Privacy and Data</a>
+                   <div class="dropdown-divider"></div>
+                   <a class="dropdown-item" href="#">Log out</a>
+                </div>
+            </div>
+
+          </div>
+
+        </div>
+      </nav>
+
+        <!-- Modal -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+
+           <div class="modal-header">
+             <h5 class="modal-title">Create a new post</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           </div>
+
+              <div class="modal-body">
+                   Caption:
+                  <div class="form-group">
+                      <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                  <button type="button" class="btn btn-light btn-sm">
+                      <i class="fas fa-camera"></i>
+                  </button>
+                  <button type="button" class="btn btn-light btn-sm">
+                      <i class="fas fa-map-marker-alt"></i>
+                  </button>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Publish</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+         <!-- Change view button -->
+    
+    <div class="container-fluid">
+        <div class="row mt-2" id="top-row"><br><br></div>
+        <div class="row p-2 mb-3" id="nav-pills">
+            <div class="mx-auto">
+                <ul class="nav nav-pills" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true"><i class="fas fa-th"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fas fa-square"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+            <!-- Wall Elements -->
+
+        <div class="tab-content">
+            <div id="home" role="tabpanel" aria-labelledby="home-tab" class="tab-pane active col-sm-12 col-md-6 mx-auto">
+
+
+
+
+                <div class="row justify-content-center">
+                    <div class="card" style="width: 800px;">
+                       <div class="card-header">
+                         <div class="row">
+                             <h4 class="titulo col-10">Gato</h4>
+                             <button type="button col-2" class="btn btn-link">12/14</button>
+                         </div>
+                       </div>
+        
+                     <img src="https://loremflickr.com/400/400?random=1" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <h5 class="card-title">23 Likes</h5>
+                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare, interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
+                          <div class="row">
+                               <button type="button" class="btn btn-light btn-sm">
+                                   <i class="far fa-heart"></i>
+                               </button>
+                               <input type="text" class="form-control comentario col-10" id="recipient-name" value="Write a comment...">
+                               <button type="button" class="btn btn-light btn-sm">
+                                   <i class="fas fa-ellipsis-v"></i>
+                               </button>
+                           </div>
+                     </div>
+                   </div>
+                 </div>
+
+
+                 <div class="row justify-content-center">
+                    <div class="card" style="width: 800px;">
+                       <div class="card-header">
+                         <div class="row">
+                             <h4 class="titulo col-10">Another gato</h4>
+                             <button type="button col-2" class="btn btn-link">12/14</button>
+                         </div>
+                       </div>
+        
+                     <img src="https://loremflickr.com/400/400?random=2" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <h5 class="card-title">15 Likes</h5>
+                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare, interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
+                          <div class="row">
+                               <button type="button" class="btn btn-light btn-sm">
+                                   <i class="far fa-heart"></i>
+                               </button>
+                               <input type="text" class="form-control comentario col-10" id="recipient-name" value="Write a comment...">
+                               <button type="button" class="btn btn-light btn-sm">
+                                   <i class="fas fa-ellipsis-v"></i>
+                               </button>
+                           </div>
+                     </div>
+                   </div>
+                 </div>
+
+
+                 <div class="row justify-content-center">
+                    <div class="card" style="width: 800px;">
+                       <div class="card-header">
+                         <div class="row">
+                             <h4 class="titulo col-10">Y mas gatos</h4>
+                             <button type="button col-2" class="btn btn-link">12/14</button>
+                         </div>
+                       </div>
+        
+                     <img src="https://loremflickr.com/400/400?random=3" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <h5 class="card-title">5 Likes</h5>
+                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare, interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
+                          <div class="row">
+                               <button type="button" class="btn btn-light btn-sm">
+                                   <i class="far fa-heart"></i>
+                               </button>
+                               <input type="text" class="form-control comentario col-10" id="recipient-name" value="Write a comment...">
+                               <button type="button" class="btn btn-light btn-sm">
+                                   <i class="fas fa-ellipsis-v"></i>
+                               </button>
+                           </div>
+                     </div>
+                   </div>
+                 </div>
+
+                
+                 <div class="row justify-content-center">
+                    <div class="card" style="width: 800px;">
+                       <div class="card-header">
+                         <div class="row">
+                             <h4 class="titulo col-10">I hate cats</h4>
+                             <button type="button col-2" class="btn btn-link">12/14</button>
+                         </div>
+                       </div>
+        
+                     <img src="https://loremflickr.com/400/400?random=4" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <h5 class="card-title">8 Likes</h5>
+                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare, interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
+                          <div class="row">
+                               <button type="button" class="btn btn-light btn-sm">
+                                   <i class="far fa-heart"></i>
+                               </button>
+                               <input type="text" class="form-control comentario col-10" id="recipient-name" value="Write a comment...">
+                               <button type="button" class="btn btn-light btn-sm">
+                                   <i class="fas fa-ellipsis-v"></i>
+                               </button>
+                           </div>
+                     </div>
+                   </div>
+                 </div>
+
+                 <div class="row justify-content-center">
+                    <div class="card" style="width: 800px;">
+                       <div class="card-header">
+                         <div class="row">
+                             <h4 class="titulo col-10">More cats</h4>
+                             <button type="button col-2" class="btn btn-link">10/17</button>
+                         </div>
+                       </div>
+        
+                     <img src="https://loremflickr.com/400/400?random=5" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <h5 class="card-title">13 Likes</h5>
+                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare, interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
+                          <div class="row">
+                               <button type="button" class="btn btn-light btn-sm">
+                                   <i class="far fa-heart"></i>
+                               </button>
+                               <input type="text" class="form-control comentario col-10" id="recipient-name" value="Write a comment...">
+                               <button type="button" class="btn btn-light btn-sm">
+                                   <i class="fas fa-ellipsis-v"></i>
+                               </button>
+                           </div>
+                     </div>
+                   </div>
+                 </div>
+
+                 <div class="row justify-content-center">
+                    <div class="card" style="width: 800px;">
+                       <div class="card-header">
+                         <div class="row">
+                             <h4 class="titulo col-10">And last one</h4>
+                             <button type="button col-2" class="btn btn-link">11/12</button>
+                         </div>
+                       </div>
+        
+                     <img src="https://loremflickr.com/400/400?random=6" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <h5 class="card-title">25 Likes</h5>
+                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare, interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
+                          <div class="row">
+                               <button type="button" class="btn btn-light btn-sm">
+                                   <i class="far fa-heart"></i>
+                               </button>
+                               <input type="text" class="form-control comentario col-10" id="recipient-name" value="Write a comment...">
+                               <button type="button" class="btn btn-light btn-sm">
+                                   <i class="fas fa-ellipsis-v"></i>
+                               </button>
+                           </div>
+                     </div>
+                   </div>
+                 </div>
+         
+            </div>
+            
+                <!-- Mosaic pictures -->
+
+            <div id="profile" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane col-sm-12 mx-auto p-0" style="background:white;">
+                <div class="row mt-3">
+                    <div class="col-sm-12 col-md-4">
+                        <img src="https://loremflickr.com/400/350?random=1" style="width:100%;">
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <img src="https://loremflickr.com/400/350?random=2" style="width:100%;">
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <img src="https://loremflickr.com/400/350?random=3" style="width:100%;">
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <img src="https://loremflickr.com/400/350?random=4" style="width:100%;">
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <img src="https://loremflickr.com/400/350?random=5" style="width:100%;">
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <img src="https://loremflickr.com/400/350?random=6" style="width:100%;">
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <img src="https://loremflickr.com/400/350?random=7" style="width:100%;">
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <img src="https://loremflickr.com/400/350?random=8" style="width:100%;">
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <img src="https://loremflickr.com/400/350?random=9" style="width:100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
